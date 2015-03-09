@@ -21,7 +21,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Add Foundation to your Rails app
-gem 'foundation-rails'
+gem 'foundation-rails', '5.4.3.1'
 # Include 'rails_12factor' gem to enable all platform features
 gem 'rails_12factor', group: :production
 
