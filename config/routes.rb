@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
-  resources :tasks
+
+  get 'welcome/aboutus'
+
+  get 'welcome/contactus'
+
+  get 'welcome/music'
+
+  get 'welcome/photos'
+
+  get 'welcome/events'
+
+  resources :tasks 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
