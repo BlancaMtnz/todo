@@ -1,0 +1,47 @@
+<h1>Listing events</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>January</th>
+      <th>February</th>
+      <th>March</th>
+      <th>April</th>
+      <th>May</th>
+      <th>June</th>
+      <th>July</th>
+      <th>August</th>
+      <th>September</th>
+      <th>October</th>
+      <th>November</th>
+      <th>December</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= event.january %></td>
+        <td><%= event.february %></td>
+        <td><%= event.march %></td>
+        <td><%= event.april %></td>
+        <td><%= event.may %></td>
+        <td><%= event.june %></td>
+        <td><%= event.july %></td>
+        <td><%= event.august %></td>
+        <td><%= event.september %></td>
+        <td><%= event.october %></td>
+        <td><%= event.november %></td>
+        <td><%= event.december %></td>
+        <td><%= link_to 'Show', event %></td>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Event', new_event_path %>

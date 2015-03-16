@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Blanca: MyString
+  concerts: MyString
+  fans: MyString
+
+two:
+  Blanca: MyString
+  concerts: MyString
+  fans: MyString

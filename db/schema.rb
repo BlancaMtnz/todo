@@ -11,7 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141031100154) do
+ActiveRecord::Schema.define(version: 20150316082927) do
+
+  create_table "events", force: true do |t|
+    t.string   "january"
+    t.string   "february"
+    t.string   "march"
+    t.string   "april"
+    t.string   "may"
+    t.string   "june"
+    t.string   "july"
+    t.string   "august"
+    t.string   "september"
+    t.string   "october"
+    t.string   "november"
+    t.string   "december"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "musics", force: true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "photos", force: true do |t|
+    t.string   "Blanca"
+    t.string   "concerts"
+    t.string   "fans"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "tasks", force: true do |t|
     t.string   "description"

@@ -1,14 +1,15 @@
 Rails.application.routes.draw do
 
+  resources :events
+
+  resources :musics
+
   get 'welcome/aboutus'
 
   get 'welcome/contactus'
 
-  get 'welcome/music'
 
-  get 'welcome/photos'
-
-  get 'welcome/events'
+ 
 
   resources :tasks 
 
