@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :musics
 
+  resources :photos
+
   get 'welcome/aboutus'
 
   get 'welcome/contactus'
