@@ -1,7 +1,9 @@
 class MusicsController < ApplicationController
+
+  
   before_action :set_music, only: [:show, :edit, :update, :destroy]
 
-  layout 'layouts/contact'
+  layout "musics"
   # GET /musics
   # GET /musics.json
   def index
