@@ -1,5 +1,7 @@
 class WelcomeController < ApplicationController
 layout "contact"
+ # GET /contact
+  # GET /contact.json
   def aboutus
   end
 

@@ -1,18 +1,20 @@
-      <div class="row">
-        <div class="large-3 columns">
-          <h1><img src="http://placehold.it/400x100&text=Logo"/></h1>
-        </div>
-        <div class="large-9 columns">
-          <ul class="right button-group">
-          <li><a href="#" class="button">Link 1</a></li>
-          <li><a href="#" class="button">Link 2</a></li>
-          <li><a href="#" class="button">Link 3</a></li>
-          <li><a href="#" class="button">Link 4</a></li>
-          </ul>
-         </div>
-       </div>
       
-     
+      <!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Todo</title>
+ <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+ <%= javascript_include_tag 'vendor/modernizr', 'data-turbolinks-track' => true %>
+ <%= csrf_meta_tags %>
+
+ <%= render 'layouts/nav_contact'%>
+</head>
+<body>
+
+  <%= yield %>
+
+    
      
      
      
@@ -26,6 +28,7 @@
         </div>
       </div>
       
+
      
      
       <div class="row">
@@ -66,10 +69,15 @@
             </div>
           </div>
           
+
+          
         </div>
       </div>
      
-       
+     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>   
       
       <%= render 'layouts/footer_contact'%>
+
+</html>
     

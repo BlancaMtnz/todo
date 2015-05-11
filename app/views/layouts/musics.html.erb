@@ -1,3 +1,16 @@
+    <!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Todo</title>
+ <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+ <%= javascript_include_tag 'vendor/modernizr', 'data-turbolinks-track' => true %>
+ <%= csrf_meta_tags %>
+
+ <%= render 'layouts/nav_contact'%>
+</head>
+<body>
+
       <div class="row">
         <div class="large-12 columns">
      
@@ -5,20 +18,14 @@
           <div class="row">
             <div class="large-12 columns">
      
-              <%= render 'layouts/nav_contact'%>
                
             </div>
           </div>
      
-         
-     
           <div class="row">
+                        <div class="large-4 small-12 columns">
      
-       
-     
-            <div class="large-4 small-12 columns">
-     
-              <img src="http://placehold.it/500x500&text=Logo">
+              <img src="https://pbs.twimg.com/profile_images/471913312972963840/QtyDx1mi.jpeg">
      
               <div class="hide-for-small panel">
                 <h3>Header</h3>
@@ -27,112 +34,18 @@
               </div>
      
               <a href="#">
-              <div class="panel callout radius">
-                <h6>99  items in your cart</h6>
-              </div>
+       
               </a>
      
             </div>
-     
-         
-     
-     
-         
-     
-            <div class="large-8 columns">
-              <div class="row">
-     
-                <div class="large-4 small-6 columns">
-                  <img src="http://placehold.it/1000x1000&text=Thumbnail">
-     
-                  <div class="panel">
-                    <h5>Item Name</h5>
-                    <h6 class="subheader">$000.00</h6>
-                  </div>
-                </div>
-     
-                <div class="large-4 small-6 columns">
-                  <img src="http://placehold.it/500x500&text=Thumbnail">
-     
-                  <div class="panel">
-                    <h5>Item Name</h5>
-                    <h6 class="subheader">$000.00</h6>
-                  </div>
-                </div>
-     
-                <div class="large-4 small-6 columns">
-                  <img src="http://placehold.it/500x500&text=Thumbnail">
-     
-                  <div class="panel">
-                    <h5>Item Name</h5>
-                    <h6 class="subheader">$000.00</h6>
-                  </div>
-                </div>
-     
-                <div class="large-4 small-6 columns">
-                  <img src="http://placehold.it/500x500&text=Thumbnail">
-     
-                  <div class="panel">
-                    <h5>Item Name</h5>
-                    <h6 class="subheader">$000.00</h6>
-                  </div>
-                </div>
-     
-                <div class="large-4 small-6 columns">
-                  <img src="http://placehold.it/500x500&text=Thumbnail">
-     
-                  <div class="panel">
-                    <h5>Item Name</h5>
-                    <h6 class="subheader">$000.00</h6>
-                  </div>
-                </div>
-     
-                <div class="large-4 small-6 columns">
-                  <img src="http://placehold.it/500x500&text=Thumbnail">
-     
-                  <div class="panel">
-                    <h5>Item Name</h5>
-                    <h6 class="subheader">$000.00</h6>
-                  </div>
-                </div>
-              </div>
-     
-         
-     
-     
-         
-              <div class="row">
-                <div class="large-12 columns">
-                  <div class="panel">
-                    <div class="row">
-     
-                      <div class="large-2 small-6 columns">
-                        <img src="http://placehold.it/300x300&text=Site Owner">
-                      </div>
-     
-                      <div class="large-10 small-6 columns">
-                        <strong>This Site Is Managed By<hr/></strong>
-     
-                        Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
-                      </div>
-     
-                    </div>
-                  </div>
-                </div>
-     
-         
-     
-              </div>
-            </div>
+            
+               <%= yield %>
           </div>
-     
-     
-         
-     
           <%= render 'layouts/footer_contact'%>
-     
-         
      
         </div>
       </div>
-    
+
+ <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
+</html>
